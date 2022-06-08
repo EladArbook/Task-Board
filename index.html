@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">My Task Board</h1>
+
+    <div id="formArea">
+        <textarea id="inputText" autofocus maxlength="200" rows="4" ma type="text"
+            placeholder="What's on my mine?"></textarea>
+        <button class="formButton" id="addNote" onclick="addNote()" title="new note">+</button>
+        <input type="date" id="inputDate"> <!--value=""-->
+        <input type="time" id="inputTime"> <!--value=""-->
+        <button class="formButton" id="clearForm" onclick="clearForm()">Reset</button>
+    </div>
+    
+    <div id="noteArea">
+        <!-- LEAVE EMPTY -->
+    </div>
+
+    <button id="clear" onclick="cleanAll()">Delete <br> everything</button>
+
+
+    <script src="script.js"></script>
+    <script src="Note.js"></script>
+</body>
+
+</html>
